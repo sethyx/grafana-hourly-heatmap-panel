@@ -15,7 +15,7 @@ interface LegendAxisProps {
 export const LegendAxis: React.FC<LegendAxisProps> = React.memo(({ width, min, max, display }) => {
   const scale = d3.scaleLinear().domain([min, max]).range([0, width]);
 
-  const preferredTickWidth = 50;
+  const preferredTickWidth = 100;
   const ratio = width / preferredTickWidth;
 
   const axis = d3
